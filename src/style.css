@@ -98,6 +98,10 @@ button {
   background-color: #a3a2a2;
 }
 
+.name-and-score-li {
+  display: flex;
+}
+
 @media (width: 426px) {
   .main {
     display: flex;
