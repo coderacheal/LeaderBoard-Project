@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zeyada&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-main {
-  height: 400px;
+body {
+  background-color: black;
+  background-image: url('./Images/hunger-games-1481488283.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  height: 520px;
   width: 70%;
   margin: auto;
-  background-color: rgb(234, 232, 232);
+}
+
+.black-board {
+  background-color: rgba(14, 13, 13, 0.6);
+  width: 80%;
+  height: 480px;
+  position: fixed;
+  margin: 5% 10%;
+  padding-bottom: 70px;
 }
 
 .leader-area {
@@ -16,12 +33,33 @@ main {
   width: 90%;
 }
 
+p {
+  color: aliceblue;
+  width: 150px;
+}
+
+.titles {
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+}
+
+.titles p {
+  color: red;
+  font-weight: bold;
+}
+
 h1 {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 55px;
-  padding-top: 20px;
+  padding-top: 10px;
+  color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.all-score-title {
+  display: flex;
+  position: fixed;
+  background-color: rgb(160, 158, 158);
 }
 
 .title-and-refresh {
@@ -40,12 +78,27 @@ h1 {
 .refresh {
   padding: 5px;
   font-size: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.refresh:hover {
+  background-color: white;
+  color: red;
 }
 
 .all-score {
-  border: 2px solid black;
   width: 80%;
   padding: 0;
+  height: 260px;
+  overflow: auto;
+  border: 2px solid gray;
+  border-radius: 4px;
 }
 
 input {
@@ -53,6 +106,7 @@ input {
   margin: 10px 10px 10px 0;
   outline: none;
   width: 99%;
+  border: none;
 }
 
 .each-entry {
@@ -65,6 +119,7 @@ h3 {
   font-size: 25px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
+  color: white;
 }
 
 .display-score {
@@ -82,24 +137,37 @@ h3 {
   justify-content: flex-end;
 }
 
-.submit-score-button {
+#submit {
   padding: 5px;
-}
-
-button {
-  background-color: rgb(92, 92, 92);
   color: white;
   font-weight: bold;
+  font-size: 17px;
+  transition: 1s;
   border-radius: 4px;
-  border: 0;
+  width: 120px;
+  background-color: red;
+  align-self: flex-end;
 }
 
-.all-score:nth-child(odd) {
-  background-color: #a3a2a2;
+#submit:hover {
+  font-weight: bold;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+  border: 1px red solid;
 }
 
 .name-and-score-li {
   display: flex;
+  padding: 5px;
+  gap: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  font-size: 45px;
+  font-family: 'Zeyada', monospace;
 }
 
 @media (width: 426px) {

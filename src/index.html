@@ -8,27 +8,31 @@
     <link href="./style.css">
 </head>
 <body>
-    <main>
-        <h1>Leaderboard</h1>
-        <div class="leader-area">
-            <div class="display-score">
-                <div class="title-and-refresh">
-                    <p class="recent-score">Recent Score</p>
-                    <button type="submit" id="refresh" class="refresh">Refresh</button>
+    <main class="board">
+        <div class="black-board">
+            <h1>Leaderboard</h1>
+            <h2 >Welcome to the Hunger Games!</h2>
+            <div class="leader-area">
+                <div class="display-score">
+                    <div class="title-and-refresh">
+                        <p class="recent-score">Recent Score</p>
+                        <button type="submit" id="refresh" class="refresh">Refresh</button>
+                    </div>
+                    <div class="titles">
+                        <p>Player</p>
+                        <p>Score</p>
+                    </div>
+                    <ul class="all-score"></ul>
                 </div>
-                <ul class="all-score"></ul>
-            </div>
-            <div class="add-score">
-                <h3>Add your Score</h3>
-                <form action="">
-                    <input id="name" type="text" placeholder="Your name"><br>
-                    <input id="score" type="text" placeholder="Your score"><br>
-                    <input type="submit" id="submit" value="Submit">
-                </form>
-                <div class="submit-score-button-div">
-                    <button class="submit-score-button">Submit</button>
+                <div class="add-score">
+                    <h3>Add your Score</h3>
+                    <form action="">
+                        <input id="name" type="text" placeholder="Your name"><br>
+                        <input id="score" type="number" placeholder="Your score"><br>
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
                 </div>
-            </div>
+            </div>  
         </div>
     </main>
 </body>

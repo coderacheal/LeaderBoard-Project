@@ -8,11 +8,21 @@ const submitBtn = document.getElementById('submit');
 const refreshBtn = document.getElementById('refresh');
 const form = document.querySelector('form');
 const allPlayers = document.querySelector('.all-score');
+const blackboard = document.querySelector('.black-board');
 
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  submitScoreToAPI(playerName.value, playerScore.value);
-  form.reset();
+  if (playerName.value === '' || playerScore.value === '') {
+    retrieveScoreFromAPI().then((apiReturnObject) => displayToScreen(apiReturnObject, allPlayers));
+  }
+  // eslint-disable-next-line no-lone-blocks
+  { submitScoreToAPI(playerName.value, playerScore.value);
+    blackboard.style.border = '2px solid red';
+    form.reset();
+    setTimeout(() => {
+      blackboard.style.border = 'none';
+    }, 2000);
+  }
 });
 
 refreshBtn.addEventListener('click', () => {
