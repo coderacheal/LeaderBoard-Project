@@ -12,11 +12,8 @@ const blackboard = document.querySelector('.black-board');
 
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  if (playerName.value === '' || playerScore.value === '') {
-    retrieveScoreFromAPI().then((apiReturnObject) => displayToScreen(apiReturnObject, allPlayers));
-  }
-  // eslint-disable-next-line no-lone-blocks
-  { submitScoreToAPI(playerName.value, playerScore.value);
+  if (playerName.value && playerScore.value) {
+    submitScoreToAPI(playerName.value, playerScore.value);
     blackboard.style.border = '2px solid red';
     form.reset();
     setTimeout(() => {

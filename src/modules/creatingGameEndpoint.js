@@ -5,6 +5,7 @@
 
 const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
+// eslint-disable-next-line no-unused-vars
 const createNewGame = async () => {
   await fetch(apiURL, {
     method: 'POST',
@@ -17,4 +18,4 @@ const createNewGame = async () => {
   }).then((response) => response.json());
 };
 
-createNewGame();
+// createNewGame();
