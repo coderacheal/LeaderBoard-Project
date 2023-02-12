@@ -1,6 +1,9 @@
 # LeaderBoard-Project
 # 📗 Table of Contents
 
+![image](https://user-images.githubusercontent.com/97846040/218318293-9f09309a-3ea6-42ba-a5d6-5cef5314e404.png)
+
+
 - [LeaderBoard-Project](#leaderboard-project)
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[Leader Board Project\] ](#-leader-board-project-)
@@ -49,9 +52,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://coderacheal.github.io/LeaderBoard/dist/)
 
-Please note that the live demo link is not yet active
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
